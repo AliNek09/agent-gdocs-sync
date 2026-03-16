@@ -1,0 +1,190 @@
+{
+  "title": "Rich Content Demo",
+  "documentId": "mock-rich-content-doc-id",
+  "tabs": [
+    {
+      "tabProperties": {
+        "tabId": "t.0",
+        "title": "Formatting"
+      },
+      "childTabs": [],
+      "documentTab": {
+        "body": {
+          "content": [
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_1"},
+                "elements": [
+                  {"textRun": {"content": "Main Title", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "This has ", "textStyle": {}}},
+                  {"textRun": {"content": "bold text", "textStyle": {"bold": true}}},
+                  {"textRun": {"content": " and ", "textStyle": {}}},
+                  {"textRun": {"content": "italic text", "textStyle": {"italic": true}}},
+                  {"textRun": {"content": " and ", "textStyle": {}}},
+                  {"textRun": {"content": "bold italic", "textStyle": {"bold": true, "italic": true}}},
+                  {"textRun": {"content": ".", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_2"},
+                "elements": [
+                  {"textRun": {"content": "Code Examples", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "Use the ", "textStyle": {}}},
+                  {"textRun": {"content": "fetch()", "textStyle": {"weightedFontFamily": {"fontFamily": "Courier New"}}}},
+                  {"textRun": {"content": " function to make requests.", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "const res = await fetch(url);", "textStyle": {"weightedFontFamily": {"fontFamily": "Courier New"}}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "const data = await res.json();", "textStyle": {"weightedFontFamily": {"fontFamily": "Courier New"}}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_3"},
+                "elements": [
+                  {"textRun": {"content": "Links", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "Visit ", "textStyle": {}}},
+                  {"textRun": {"content": "Google", "textStyle": {"link": {"url": "https://google.com"}}}},
+                  {"textRun": {"content": " for more info.", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_2"},
+                "elements": [
+                  {"textRun": {"content": "Lists", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "First item", "textStyle": {}}},
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ],
+                "bullet": {
+                  "listId": "kix.rich1",
+                  "nestingLevel": 0
+                }
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "Nested item", "textStyle": {}}},
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ],
+                "bullet": {
+                  "listId": "kix.rich1",
+                  "nestingLevel": 1
+                }
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "Second item", "textStyle": {}}},
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ],
+                "bullet": {
+                  "listId": "kix.rich1",
+                  "nestingLevel": 0
+                }
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_2"},
+                "elements": [
+                  {"textRun": {"content": "Data Table", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "table": {
+                "tableRows": [
+                  {
+                    "tableCells": [
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Name", "textStyle": {"bold": true}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Role", "textStyle": {"bold": true}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Status", "textStyle": {"bold": true}}}]}}]}
+                    ]
+                  },
+                  {
+                    "tableCells": [
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Alice", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Engineer", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Active", "textStyle": {}}}]}}]}
+                    ]
+                  },
+                  {
+                    "tableCells": [
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Bob", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Designer", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "On Leave", "textStyle": {}}}]}}]}
+                    ]
+                  },
+                  {
+                    "tableCells": [
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Carol", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "PM", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Active", "textStyle": {}}}]}}]}
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

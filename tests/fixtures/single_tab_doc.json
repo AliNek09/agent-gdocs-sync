@@ -1,0 +1,92 @@
+{
+  "title": "Project Notes",
+  "documentId": "mock-single-tab-doc-id",
+  "tabs": [
+    {
+      "tabProperties": {
+        "tabId": "t.0",
+        "title": "Tab 1"
+      },
+      "childTabs": [],
+      "documentTab": {
+        "body": {
+          "content": [
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_1"},
+                "elements": [
+                  {"textRun": {"content": "Project Notes", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "These are the project notes for Q1 2026.", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_2"},
+                "elements": [
+                  {"textRun": {"content": "Goals", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "Launch MVP", "textStyle": {}}},
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ],
+                "bullet": {
+                  "listId": "kix.list1",
+                  "nestingLevel": 0
+                }
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "Onboard 10 beta users", "textStyle": {}}},
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ],
+                "bullet": {
+                  "listId": "kix.list1",
+                  "nestingLevel": 0
+                }
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "Collect feedback", "textStyle": {}}},
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ],
+                "bullet": {
+                  "listId": "kix.list1",
+                  "nestingLevel": 1
+                }
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "This is a ", "textStyle": {}}},
+                  {"textRun": {"content": "critical", "textStyle": {"bold": true}}},
+                  {"textRun": {"content": " milestone.", "textStyle": {}}}
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

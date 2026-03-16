@@ -1,0 +1,168 @@
+{
+  "title": "Project Tracker",
+  "documentId": "mock-multi-tab-doc-id",
+  "tabs": [
+    {
+      "tabProperties": {
+        "tabId": "t.0",
+        "title": "Bug Tracker"
+      },
+      "childTabs": [
+        {
+          "tabProperties": {
+            "tabId": "t.0.1",
+            "title": "Endpoints"
+          },
+          "childTabs": [],
+          "documentTab": {
+            "body": {
+              "content": [
+                {
+                  "paragraph": {
+                    "paragraphStyle": {"namedStyleType": "HEADING_1"},
+                    "elements": [
+                      {"textRun": {"content": "API Endpoints", "textStyle": {}}}
+                    ]
+                  }
+                },
+                {
+                  "paragraph": {
+                    "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                    "elements": [
+                      {"textRun": {"content": "GET /api/v1/users", "textStyle": {"weightedFontFamily": {"fontFamily": "Courier New"}}}}
+                    ]
+                  }
+                },
+                {
+                  "paragraph": {
+                    "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                    "elements": [
+                      {"textRun": {"content": "POST /api/v1/users", "textStyle": {"weightedFontFamily": {"fontFamily": "Courier New"}}}}
+                    ]
+                  }
+                },
+                {
+                  "paragraph": {
+                    "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                    "elements": [
+                      {"textRun": {"content": "These endpoints require authentication.", "textStyle": {}}}
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "documentTab": {
+        "body": {
+          "content": [
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_1"},
+                "elements": [
+                  {"textRun": {"content": "Bug Tracker", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "This tab tracks all known bugs.", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "table": {
+                "tableRows": [
+                  {
+                    "tableCells": [
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "ID", "textStyle": {"bold": true}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Description", "textStyle": {"bold": true}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Status", "textStyle": {"bold": true}}}]}}]}
+                    ]
+                  },
+                  {
+                    "tableCells": [
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "BUG-001", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Login fails on mobile", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Open", "textStyle": {}}}]}}]}
+                    ]
+                  },
+                  {
+                    "tableCells": [
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "BUG-002", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "Timeout on large uploads", "textStyle": {}}}]}}]},
+                      {"content": [{"paragraph": {"elements": [{"textRun": {"content": "In Progress", "textStyle": {}}}]}}]}
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabProperties": {
+        "tabId": "t.1",
+        "title": "✅ Old Feature"
+      },
+      "childTabs": [],
+      "documentTab": {
+        "body": {
+          "content": [
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "This feature has been completed.", "textStyle": {}}}
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabProperties": {
+        "tabId": "t.2",
+        "title": "API Design"
+      },
+      "childTabs": [],
+      "documentTab": {
+        "body": {
+          "content": [
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "HEADING_1"},
+                "elements": [
+                  {"textRun": {"content": "API Design", "textStyle": {}}}
+                ]
+              }
+            },
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "The API follows ", "textStyle": {}}},
+                  {"textRun": {"content": "RESTful", "textStyle": {"bold": true}}},
+                  {"textRun": {"content": " conventions.", "textStyle": {}}}
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Empty Document",
+  "documentId": "mock-empty-doc-id",
+  "tabs": [
+    {
+      "tabProperties": {
+        "tabId": "t.0",
+        "title": "Tab 1"
+      },
+      "childTabs": [],
+      "documentTab": {
+        "body": {
+          "content": [
+            {
+              "paragraph": {
+                "paragraphStyle": {"namedStyleType": "NORMAL_TEXT"},
+                "elements": [
+                  {"textRun": {"content": "\n", "textStyle": {}}}
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
