@@ -21,24 +21,33 @@ fi
 cat > "$CONF_FILE" <<'CONF'
 # Google Docs Report Push configuration
 # Docs: https://github.com/AliNek09/agent-gdocs-sync
+#
+# Each mapping links a local folder to a Google Doc.
+# Format: "source_dir|doc_name"
+#
+# Examples:
+#   "docs/api|API Documentation"
+#   "docs/reports|Weekly Reports"
+#   "docs/frontend|Frontend Specs"
 
-# Document name (required — will be created if it doesn't exist)
-DOC_NAME=""
-
-# Google Drive folder ID to create the doc in (empty = root of My Drive)
-FOLDER_ID=""
-
-# Local directory with .md reports (relative to repo root)
-SOURCE_DIR="docs/reports"
+PUSH_MAPPINGS=(
+  "docs/reports|My Reports"
+)
 
 # File pattern to include (glob)
 FILE_PATTERN="*.md"
+
+# --- Alternative: simple single-mapping mode ---
+# Instead of PUSH_MAPPINGS, you can use a single DOC_NAME + SOURCE_DIR:
+#
+# DOC_NAME="My Reports"
+# SOURCE_DIR="docs/reports"
 CONF
 
 echo "Created $CONF_FILE with default settings."
 echo ""
 echo "Next steps:"
-echo "  1. Edit $CONF_FILE and set DOC_NAME to your desired document name"
+echo "  1. Edit $CONF_FILE and configure your folder → Google Doc mappings"
 echo "  2. Authenticate with Google: gcloud auth login --enable-gdrive-access"
 
 # Check gcloud status
