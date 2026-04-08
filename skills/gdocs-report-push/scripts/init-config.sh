@@ -17,31 +17,42 @@ if [[ -f "$CONF_FILE" ]]; then
   exit 0
 fi
 
-# Create default config
 cat > "$CONF_FILE" <<'CONF'
 # Google Docs Report Push configuration
 # Docs: https://github.com/AliNek09/agent-gdocs-sync
 #
 # Each mapping links a local folder to a Google Doc.
-# Format: "source_dir|doc_name"
+# Format (pipe-separated, fields 3 and 4 optional):
+#
+#   "source_dir | doc_name | folder_id | doc_id"
+#
+# - source_dir: required. Local directory relative to repo root.
+# - doc_name:   name of the Google Doc. Used to look it up in Drive
+#               (first match wins unless folder_id disambiguates it).
+# - folder_id:  optional. Drive folder ID to scope the lookup and to use
+#               when auto-creating the doc. Leave empty for My Drive root.
+# - doc_id:     optional. Direct document ID — unambiguous, no lookup.
+#               When set, doc_name is ignored.
 #
 # Examples:
-#   "docs/api|API Documentation"
-#   "docs/reports|Weekly Reports"
-#   "docs/frontend|Frontend Specs"
+#   "docs/api|API Documentation"                      # by name, My Drive
+#   "docs/api|API Documentation|0AFolderIDHere"       # by name, scoped folder
+#   "docs/api||0AFolderIDHere|1DocIDHere"             # by ID, no name lookup
 
 PUSH_MAPPINGS=(
   "docs/reports|My Reports"
 )
 
-# File pattern to include (glob)
+# File pattern to include (glob). Used by every mapping.
 FILE_PATTERN="*.md"
 
 # --- Alternative: simple single-mapping mode ---
-# Instead of PUSH_MAPPINGS, you can use a single DOC_NAME + SOURCE_DIR:
+# Instead of PUSH_MAPPINGS, you can set one target globally:
 #
 # DOC_NAME="My Reports"
 # SOURCE_DIR="docs/reports"
+# FOLDER_ID=""
+# DOC_ID=""
 CONF
 
 echo "Created $CONF_FILE with default settings."
@@ -49,6 +60,10 @@ echo ""
 echo "Next steps:"
 echo "  1. Edit $CONF_FILE and configure your folder → Google Doc mappings"
 echo "  2. Authenticate with Google: gcloud auth login --enable-gdrive-access"
+echo ""
+echo "Tip: you can skip the config entirely and use ad-hoc mode:"
+echo "  bash $(dirname "$(readlink -f "$0" 2>/dev/null || echo "$0")")/push.sh \\"
+echo "       --source-dir docs/api --doc-name 'My Doc'"
 
 # Check gcloud status
 echo ""
